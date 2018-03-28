@@ -117,8 +117,8 @@
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Launch demo modal
 </button>
-    <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
-  <div class="modal-dialog" role="document">
+    <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Modal title</h5>
@@ -136,7 +136,27 @@
     </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-6">
+    <button type="button" class="btn btn-alert" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+    Tooltip on top
+    </button>
+    <button type="button" class="btn btn-alert" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+    Tooltip on right
+    </button>
+    <button type="button" class="btn btn-alert" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+    Tooltip on bottom
+    </button>
+    <button type="button" class="btn btn-alert" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+    Tooltip on left
+    </button>
+  </div>
 </div>
+</div>
+
+
+
 
 <div class="col-6">
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#2przykladModal">
@@ -161,6 +181,16 @@
     </div>
   </div>
 </div>
+
+<button type="button" class="btn btn-lg btn-danger" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on top
+</button>
+
+<button type="button" class="btn btn-lg btn-danger" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on right
+</button>
+
+
 </div>
 
 
@@ -190,5 +220,13 @@
   <!-- Bootstrap JavaScript and Popper JS (https://popper.js.org) -->
   <script src="js/bootstrap.bundle.min.js"></script>
 
+  <script type="text/javascript">
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  });
+  $(function () {
+$('[data-toggle="tooltip"]').tooltip()
+});
+  </script>
 </body>
 </html>
