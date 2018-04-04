@@ -1,1 +1,12 @@
 /* Twoje style */
+.fas {
+  font-family: 'Open Sams' , sans-serif;
+}
+
+input:invalid {
+  border: 1px dashed: red dashed;
+}
+
+input:valid {
+  border: 2px solid: green;
+}
